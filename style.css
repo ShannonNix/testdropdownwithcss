@@ -202,7 +202,7 @@
     }
   
     ul li:hover .dropdown {
-      height: 135px;
+      height: auto;
     }
   
     ul li:hover > button > .arrow {

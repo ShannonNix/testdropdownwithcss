@@ -36,7 +36,7 @@
     top: 0;
   }
   
-  button #hamburger {
+  button#hamburger {
     opacity: 0;
     position: absolute;
     right: 0;
@@ -77,7 +77,7 @@
     right: 0;
   }
   
-  input[type="checkbox"]:focus + label::before {
+ button:focus + label::before {
     box-shadow: 0 0 20px black;
   }
   
@@ -120,11 +120,11 @@
   .dropdown {
     padding: 2px 1.5rem;
   }
-  input[type="checkbox"] {
+  button#hamburger {
     opacity: 0;
     /* ... */
   }
-  input[type="checkbox"]:focus + label::before {
+  button#hamburger:focus + label::before {
     box-shadow: 0 0 20px black;
   }
   .menus {
@@ -134,7 +134,7 @@
   }
   /* toggle main dropdown */
   
-  input[type="checkbox"]:checked ~ nav > ul {
+  button#hamburger:checked ~ nav > ul {
     visibility: visible;
   }
   .dropdown {
@@ -151,7 +151,7 @@
     transform: translateY(-1em);
     transition: transform ease 0.2s;
   }
-  input[type="checkbox"]:checked ~ nav > ul {
+  button#hamburger:checked ~ nav > ul {
     /* ... */
     transform: translateY(0);
   }
@@ -174,7 +174,7 @@
     }
   
     label,
-    input[type="checkbox"] {
+    button#hamburger {
       display: none;
     }
   

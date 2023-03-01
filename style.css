@@ -134,7 +134,7 @@
   }
   /* toggle main dropdown */
   
-  button#hamburger:checked ~ nav > ul {
+  button#hamburger:active ~ nav > ul {
     visibility: visible;
   }
   .dropdown {
@@ -151,7 +151,7 @@
     transform: translateY(-1em);
     transition: transform ease 0.2s;
   }
-  button#hamburger:checked ~ nav > ul {
+  button#hamburger:active ~ nav > ul {
     /* ... */
     transform: translateY(0);
   }
